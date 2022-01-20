@@ -1,0 +1,17 @@
+static void PrintSubarrays(int Arr[], int N){
+//Enter your code here
+// Scanner sc = new Scanner(System.in);
+//  N = sc.nextInt();
+
+// int arrSize = Arr.length;
+for(int stratPoint = 0; stratPoint<N;stratPoint++){
+    for(int end = stratPoint; end<N; end++ ){
+        for(int j=stratPoint;j<=end;j++){
+            System.out.print(Arr[j]+" ");
+
+        }
+             System.out.println();   
+
+    }
+}
+}
