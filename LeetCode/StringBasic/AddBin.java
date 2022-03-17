@@ -21,9 +21,8 @@ public class AddBin {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-//        StringBuilder res = new StringBuilder();
-        String a = "11";
-        String b = "1";
+        String a = sc.next();
+        String b = sc.next();
 //        addBin(a,b);
         System.out.println(addBin(a,b));
     }
