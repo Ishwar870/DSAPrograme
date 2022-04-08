@@ -22,10 +22,10 @@ public class CountItemsMatchingaRule {
         }
         return count;
     }
-    public static void main(String[] args) {
-        List<List<String>> item = Arrays.asList(("phone","blue","pixel"),("computer","silver","lenovo"),("phone","gold","iphone"));
-        String ruleKey = "color";
-        String ruleValue = "phone";
-        System.out.println(countMatches(item,ruleKey,ruleValue));
-    }
+//     public static void main(String[] args) {
+//         List<List<String>> item = Arrays.asList(("phone","blue","pixel"),("computer","silver","lenovo"),("phone","gold","iphone"));
+//         String ruleKey = "color";
+//         String ruleValue = "phone";
+//         System.out.println(countMatches(item,ruleKey,ruleValue));
+//     }
 }
