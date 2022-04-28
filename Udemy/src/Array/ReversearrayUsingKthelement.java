@@ -9,7 +9,7 @@ public class Reversearrya {
 
             for (int i = 0; i < n; i += k) {
                     int l = i;
-                    int r = Math.min(i + k - 1, n - 3);
+                    int r = Math.min(i + k - 1, n - k);
 
                         while (l < r) {
                             int temp = arr[l];
@@ -22,9 +22,14 @@ public class Reversearrya {
             }
     }
     public static void main(String[] args) {
-       int arr[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14};
-        int n  = arr.length;
-       int k = 4;
+       Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        for(int i =0;i<n;i++){
+            arr[i] = sc.nextInt();
+        }
+        
+       int k = sc.nextInt();
 
        reverse(arr,n,k);
        for (int i =0;i< n;i++){
