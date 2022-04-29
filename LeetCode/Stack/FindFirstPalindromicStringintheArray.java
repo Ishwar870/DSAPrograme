@@ -3,17 +3,17 @@ package StringBasic;
 import java.util.Stack;
 
 public class FindFirstPalindromicStringintheArray {
-    public static boolean isPalindrome(String t){
-        char c[] = new char[t.length()];
-        String res = "";
-        Stack<Character> st = new Stack<>();
+    public static boolean isPalindrome(String str){
+        char c[] = new char[str.length()];
+        String result = "";
+        Stack<Character> stack = new Stack<>();
         for (int i = 0; i < c.length ; i++) {
-            st.push(t.charAt(i));
+            stack.push(str.charAt(i));
         }
-        while(!st.isEmpty()){
-            res = res + st.pop();
+        while(!stack.isEmpty()){
+            result = result + stack.pop();
         }
-        if(t.equals(res)){
+        if(str.equals(result)){
             return true;
         }
         return false;
@@ -24,7 +24,7 @@ public class FindFirstPalindromicStringintheArray {
                     return word;
                 }
             }
-            return " ";
+            return "";
     }
     public static void main(String[] args) {
         String str[] = {"abc","car","ada","racecar","cool"};
