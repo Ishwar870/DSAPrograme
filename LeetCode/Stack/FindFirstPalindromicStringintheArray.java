@@ -26,6 +26,29 @@ public class FindFirstPalindromicStringintheArray {
             }
             return "";
     }
+    
+    
+    
+    // Method 2 
+    class Solution {
+    public String firstPalindrome(String[] words) {
+        for(String word: words){
+            int start = 0;
+            int end = word.length()-1;
+            while(start <= end){
+                if(word.charAt(start) != word.charAt(end))
+                    break;
+                start++;
+                end--;
+            }
+            if(start >= end){
+                return word;
+            }
+        }
+        return "";
+        
+    }
+}
     public static void main(String[] args) {
         String str[] = {"abc","car","ada","racecar","cool"};
         firstPalindrome(str);
