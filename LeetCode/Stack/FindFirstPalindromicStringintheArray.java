@@ -3,6 +3,7 @@ package StringBasic;
 import java.util.Stack;
 
 public class FindFirstPalindromicStringintheArray {
+//     Method 1
     public static boolean isPalindrome(String str){
         char c[] = new char[str.length()];
         String result = "";
@@ -28,9 +29,11 @@ public class FindFirstPalindromicStringintheArray {
     }
     
     
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    
     
     // Method 2 
-    class Solution {
     public String firstPalindrome(String[] words) {
         for(String word: words){
             int start = 0;
@@ -48,7 +51,12 @@ public class FindFirstPalindromicStringintheArray {
         return "";
         
     }
-}
+    
+    
+    
+    
+    
+
     public static void main(String[] args) {
         String str[] = {"abc","car","ada","racecar","cool"};
         firstPalindrome(str);
